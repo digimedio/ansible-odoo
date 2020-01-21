@@ -89,11 +89,11 @@ either the PyPi requirements or `odoo_addons_debian_packages`
       odoo_addons_repo_rev: 11.0
 
       odoo_config_addons_path:
-        - "/home/{{ odoo_user }}/odoo/enterprise"
-        - "/home/{{ odoo_user }}/odoo/addons/custom"
-        - "/home/{{ odoo_user }}/odoo/addons/external"
-        - "/home/{{ odoo_user }}/odoo/server/odoo/addons"
-        - "/home/{{ odoo_user }}/odoo/server/addons"
+        - "{{ odoo_workdir }}/odoo/enterprise"
+        - "{{ odoo_workdir }}/odoo/addons/custom"
+        - "{{ odoo_workdir }}/odoo/addons/external"
+        - "{{ odoo_workdir }}/odoo/server/odoo/addons"
+        - "{{ odoo_workdir }}/odoo/server/addons"
 
       odoo_addons_debian_packages:
         - python3-openpyxl
