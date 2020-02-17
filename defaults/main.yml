@@ -34,7 +34,7 @@ odoo_repo_depth: 1      # Set to 0 to clone the full history (slower)
                         # (this option is not supported with hg)
 
 # Enterprise repository to deploy
-odoo_enterprise_dir: "/home/{{ odoo_user }}/odoo/enterprise/"
+odoo_enterprise_dir: "{{ odoo_workdir }}/enterprise/"
 odoo_enterprise_repo_type: git     # git or hg
 odoo_enterprise_repo_url: False
 odoo_enterprise_repo_dest: "{{ odoo_install_type == 'buildout' and odoo_workdir or odoo_enterprise_dir }}"
@@ -47,7 +47,7 @@ odoo_enterprise_repo_depth: 1      # Set to 0 to clone the full history (slower)
                         # (this option is not supported with hg)
 
 # Addons repository to deploy
-odoo_addons_dir: "/home/{{ odoo_user }}/odoo/addons/"
+odoo_addons_dir: "{{ odoo_workdir }}/addons/"
 odoo_addons_repo_type: git     # git or hg
 odoo_addons_repo_url: False
 odoo_addons_repo_dest: "{{ odoo_install_type == 'buildout' and odoo_workdir or odoo_addons_dir }}"
