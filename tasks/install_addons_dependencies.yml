@@ -20,6 +20,7 @@
 - name: Addons - Install PyPi dependencies using requirements file
   pip:
     requirements: "file://{{ odoo_addons_dir }}/requirements.txt"
+    executable: "{{ odoo_pip_executable }}"
   when: addons_requirements_file.stat.exists
   tags:
     - odoo_packages
