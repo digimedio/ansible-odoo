@@ -6,6 +6,7 @@ odoo_debian_packages:
     - python3-pip
     # Python pyldap requirements
     - libldap2-dev
+    - libpq-dev
     - libsasl2-dev
     # Python lxml requirements
     - libxml2
