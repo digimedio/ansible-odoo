@@ -14,6 +14,15 @@
     name: "{{ item }}"
     executable: "{{ odoo_pip_executable }}"
   with_items: "{{ odoo_pypi_packages }}"
+  when: odoo_pypi_packages_requirements_file is not defined or odoo_pypi_packages_requirements_file == False
+  tags:
+    - odoo_packages
+
+- name: Install Odoo dependencies (PyPi) requirements.txt
+  pip:
+    requirements: "file://{{ odoo_workdir }}/server/requirements.txt"
+    executable: "{{ odoo_pip_executable }}"
+  when: odoo_pypi_packages_requirements_file is defined and odoo_pypi_packages_requirements_file == True
   tags:
     - odoo_packages
 
