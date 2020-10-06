@@ -81,6 +81,10 @@ env:
   - IMAGE="ubuntu:focal" ODOO_VERSION=13.0 ODOO_INSTALL_TYPE=standard ANSIBLE_VERSION="2.4,<2.5"
   - IMAGE="ubuntu:focal" ODOO_VERSION=13.0 ODOO_INSTALL_TYPE=buildout ANSIBLE_VERSION="2.4,<2.5"
   - IMAGE="ubuntu:focal" ODOO_VERSION=13.0 ODOO_INSTALL_TYPE=pip ANSIBLE_VERSION="2.4,<2.5"
+  #     Odoo 14.0
+  - IMAGE="ubuntu:focal" ODOO_VERSION=14.0 ODOO_INSTALL_TYPE=standard ANSIBLE_VERSION="2.4,<2.5"
+  - IMAGE="ubuntu:focal" ODOO_VERSION=14.0 ODOO_INSTALL_TYPE=buildout ANSIBLE_VERSION="2.4,<2.5"
+  - IMAGE="ubuntu:focal" ODOO_VERSION=14.0 ODOO_INSTALL_TYPE=pip ANSIBLE_VERSION="2.4,<2.5"
 
 install:
   # Spawn a LXD container
