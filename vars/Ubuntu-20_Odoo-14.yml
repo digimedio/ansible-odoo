@@ -4,6 +4,7 @@ odoo_debian_packages:
     - build-essential
     - python3-dev
     - python3-setuptools
+    - python3-xlwt
     - libxml2
     - libxml2-dev
     - libxslt1-dev
@@ -11,6 +12,7 @@ odoo_debian_packages:
     - libsasl2-dev
     - libjpeg9-dev
     - libpq-dev
+    - xz-utils
 
 odoo_required_tools:
     - sudo
