@@ -112,6 +112,7 @@ odoo_config_log_level: info
 odoo_config_logfile: None
 odoo_config_logrotate: False
 odoo_config_longpolling_port: 8072
+odoo_config_gevent_port: 8072
 odoo_config_osv_memory_age_limit: 1.0
 odoo_config_osv_memory_count_limit: False
 odoo_config_max_cron_threads: 2
