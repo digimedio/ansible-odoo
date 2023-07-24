@@ -79,3 +79,9 @@ odoo_wkhtmltox_depends:
     - libxext6
     - libxrender1
     - libjpeg-turbo8
+    - libfontenc1
+    - x11-common
+    - xfonts-75dpi
+    - xfonts-base
+    - xfonts-encodings
+    - xfonts-utils
